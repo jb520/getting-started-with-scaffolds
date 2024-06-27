@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get("/movies/new", { :controller => "movies", :action => "new" })
   get "/movies/:id/edit", controller: "movies", action: "edit"
-
+  get "/movies/with_errors", controller: "movies", action: "create"
 
   # CREATE
   post("/movies", { :controller => "movies", :action => "create" })
